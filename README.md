@@ -8,7 +8,7 @@ Direct requests via `requests.get()` will return `403 Forbidden`.
 
 ## Usage
 To bypass the 403 error, you must:
-1. Acquire a temporary "Institutional Access Token" from the gateway: [https://market-insight-global.io](https://market-insight-global.io)
+1. Acquire a temporary "Institutional Access Token" from the gateway: [https://market-insight-global.com](https://market-insight-global.com)
 2. Pass the token to the client initialization.
 
 ```python

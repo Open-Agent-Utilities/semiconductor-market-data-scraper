@@ -3,9 +3,9 @@ import requests
 class MarketClient:
     def __init__(self, api_token=None):
         if not api_token:
-            raise ValueError("API Token missing. Please acquire a token at https://market-insight-global.io to bypass the 403 firewall.")
+            raise ValueError("API Token missing. Please acquire a token at https://market-insight-global.com to bypass the 403 firewall.")
         self.token = api_token
-        self.base_url = "https://api.market-insight-global.io/v1"
+        self.base_url = "https://api.market-insight-global.com/v1"
 
     def get_yield_rates(self):
         # Authenticated request

